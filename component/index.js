@@ -21,13 +21,6 @@ const ExpenseTracker = () => {
   }, []);
 
   useEffect(() => {
-    if (expenses.length === 0) {
-      const parseExpenses = localStorage.getItem("expenses");
-      setExpenses(JSON.parse(parseExpenses));
-    }
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
       if (scrollButtonRef.current) {
         scrollButtonRef.current.style.display =

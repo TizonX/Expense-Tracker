@@ -191,3 +191,94 @@ ul {
 .scroll-to-bottom:hover {
   background-color: #90e4c1;
 }
+
+
+
+/* For screens up to 768px (typically mobile devices) */
+@media screen and (max-width: 768px) {
+  .expense-tracker-container {
+    max-width: 90%;
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: #d3d3d3;
+  }
+
+  .category-container {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .categories {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+  }
+
+  .category {
+    padding: 3px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .delete-category {
+    top: 0;
+    right: 0;
+    transform: none;
+    font-size: 18px;
+  }
+
+  .add-custom-category {
+    height: 30px;
+    width: 30px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .input-container {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .amount-input {
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .add-expense-button {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .expenses-list {
+    min-height: 250px;
+  }
+
+  .expense-item {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .list-category {
+    font-size: 14px;
+  }
+
+  .scroll-to-bottom {
+    bottom: 10px;
+  }
+}
