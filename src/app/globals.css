@@ -123,7 +123,7 @@
 }
 
 .expenses-list {
-  min-height: 350px;
+  height: 500px;
   overflow-y: auto;
   position: relative;
 }
