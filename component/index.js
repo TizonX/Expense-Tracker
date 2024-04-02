@@ -117,7 +117,7 @@ const ExpenseTracker = () => {
       <h1 className="heading">Expense Tracker</h1>
       <div className="expenses-list">
         <ul>
-          {expenses.map((expense, index) => (
+          {expenses?.map((expense, index) => (
             <li key={index} className="expense-item">
               <span
                 className="amount"
